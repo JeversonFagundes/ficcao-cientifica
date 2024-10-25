@@ -30,7 +30,7 @@ function inserirUsuarios(usuarios) {
 
 // Função para inserir um usuário na tabela
 function inserirUsuario(usuario) {
-    let tbody = document.getElementById('usuarios'); // Obtém o elemento tbody com id 'usuarios'
+    let tbody = document.getElementById('ficcao'); // Obtém o elemento tbody com id 'ficcao'
     let tr = document.createElement('tr'); // Cria uma nova linha na tabela
 
     // Cria células na linha e insere os dados do usuário

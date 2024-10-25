@@ -13,7 +13,7 @@ function conectar()
         "localhost",
         "root",
         "",
-        "ficcao_cientifica"
+        "crud_ajax_thiago"
     );
     if ($mysql === false) {
         echo "Erro ao conectar à base dados. Nº do erro: " .

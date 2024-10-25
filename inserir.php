@@ -1,17 +1,17 @@
 <?php
 
 require_once "conexao.php";
-$conexao = conectar();
+$mysql = conectar();
 
-$usuario = json_decode(file_get_contents("php://input"));
-$sql = "INSERT INTO usuarios 
-        (nome, email, senha)
+$ficcao_cientifica = json_decode(file_get_contents("php://input"));
+$sql = "INSERT INTO ficcao_cientifica
+        (tema_ficcao_cientifica, autor_ficcao_cientifica, descricao_ficcao_cientifica)
         VALUES 
-        ('$usuario->nome', 
-        '$usuario->email', 
-        '$usuario->senha')";
+        ('$ficcao_cientifica->nome', 
+        '$ficcao_cientifica->email', 
+        '$ficcao_cientifica->senha')";
 
-executarSQL($conexao, $sql);
+executarSQL($mysql, $sql);
 
-$usuario->id_usuario = mysqli_insert_id($conexao);
-echo json_encode($usuario);
+$ficcao_cientifica->id_ficcao_cientifica = mysqli_insert_id($mysql);
+echo json_encode($ficcao_cientifica);

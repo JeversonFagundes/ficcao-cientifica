@@ -133,7 +133,7 @@ function salvarficcao(event) {
     if (id == "") {
         cadastrar(id, tema, autor, descricao);
     } else {
-        alterar(id, tema, autor, descricao);
+        alterarficcao(id, tema, autor, descricao);
     }
     document.getElementsByTagName('form')[0].reset();
 }

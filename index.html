@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <title>CRUD JS</title>
+</head>
+
+<body>
+    <form onsubmit="return salvarficcao(event);">
+        <label>Id <input type="text" name="id" ></label>
+        <label>Tema da ficção cientifica: <input type="text" name="tema" ></label><br>
+        <label>Autor: <input type="text" name="autor" ></label><br>
+        <label>Descrição: <textarea name="descrição" ></textarea></label><br>
+        <input type="submit" value="Salvar Usuário">
+    </form>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Autor</th>
+                <th>Tema</th>
+                <th>Descrição</th>
+                <th colspan="2">Opções</th>
+            </tr>
+        </thead>
+        <tbody id="ficcoes"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

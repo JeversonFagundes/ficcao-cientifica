@@ -1,2 +1,1 @@
-# ficcao-cientifica
-Trabalho de tópicos usando js e ajax
+# crud-js-ajax

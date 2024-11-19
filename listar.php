@@ -3,7 +3,7 @@
 require_once "conexao.php";
 $conexao = conectar();
 
-$sql = "SELECT * FROM ficcao_cientifica";
+$sql = "SELECT * FROM usuario";
 $resultado = executarSQL($conexao, $sql);
-$ficcao_cientifica = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
-echo json_encode($ficcao_cientifica);
+$usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
+echo json_encode($usuarios);

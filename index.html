@@ -4,40 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <title>CRUD JS</title>
 </head>
 
 <body>
-    <!-- Form ficções -->
-    <form onsubmit="return salvarficcao(event);">
-        <label>Id <input type="text" name="id" ></label>
-        <label>Tema da ficção cientifica: <input type="text" name="tema" ></label><br>
-        <label>Autor: <input type="text" name="autor" ></label><br>
-        <label>Descrição: <textarea name="descricao" ></textarea></label><br>
+    <form onsubmit="return salvarUsuario(event);">
+        <label>ID: <input type="number" name="id_usuario"></label><br>
+        <label>Nome: <input type="text" name="nome"></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Senha: <input type="password" name="senha"></label><br>
         <input type="submit" value="Salvar Usuário">
     </form>
     <br>
-
-        <!-- table listagem  -->
     <table>
         <thead>
             <tr>
-                <th>Autor</th>
-                <th>Tema</th>
-                <th>Descrição</th>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
                 <th colspan="2">Opções</th>
             </tr>
         </thead>
-        <tbody id="ficcoes"></tbody>
+        <tbody id="usuarios"></tbody>
     </table>
 
     <script src="script.js"></script>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@
     require_once "headerNav.php";
     ?>
 
-    <h1 class="center-align">O que é o gênero ficção cientifica?</h1>
+    <h1 class="center-align">O que é o gênero Ficção Científica?</h1>
     <main class="container">
 
         <div class="card-panel">

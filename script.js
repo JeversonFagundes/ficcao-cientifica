@@ -1,7 +1,6 @@
 
 //usuarios => ficcoes
 
-
 /*
 Essa linha de código adiciona um evento que será acionado quando todo o conteúdo do DOM (Document Object Model) for carregado e analisado. A função associada a esse evento (listarTodos) será chamada imediatamente após o carregamento do DOM, garantindo que todos os elementos HTML estejam disponíveis para manipulação.
 */

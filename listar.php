@@ -1,6 +1,7 @@
+
 <?php
 
-require_once "conexao.php";
+                                                                                                                                                                          require_once "conexao.php";
 $conexao = conectar();
 
 //A linha de código PHP no arquivo listar.php desempenha a função de buscar dados de uma tabela no banco de dados e retornar esses dados no formato JSON.

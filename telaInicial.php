@@ -129,14 +129,14 @@
                 </tbody>
             </table>
         </div>
+        <a href='relatorio.php' class="brown lighten-3 waves-effect waves-light btn"><i class="material-icons right">add</i>Gerar relatório</a>
     </main>
     <script src="script.js"></script>
-    
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script>
-
         document.addEventListener('DOMContentLoaded', function() {
             // Inicializa a sidenav
             var elems = document.querySelectorAll('.sidenav');
